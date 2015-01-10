@@ -3,8 +3,10 @@ import re
 import time
 import datetime
 
+tempSensorPath = "../sys/bus/w1/devices/"
+
 def readFromFile(fileName):
-    file = open("./files/"+fileName);
+    file = open(fileName+"28-000006bf05f0/w1_slave");
     text = file.read();
     file.close();
     return text
@@ -15,7 +17,7 @@ def extractTemperature(temperatureSensor):
 
 
 def getActualTemperature():
-    temp = extractTemperature(readFromFile("temp1.txt"));
+    temp = extractTemperature(readFromFile(tempSensorPath));
     return int(temp);
 
 
@@ -43,7 +45,7 @@ def informationCycle(cycle):
 
 def saveCycleTime(cycleTime, cycleType):
     print(cycleTime)
-    file = open('files/wynik.txt', "a")
+    file = open('files/temp1.txt', "a")
     localtime   = time.localtime()
     timeString  = time.strftime("%Y:%m:%d %H-%M-%S", localtime)
 
@@ -82,7 +84,7 @@ def watchTemperature():
 
 def main():
 
-    temperatureSensor = readFromFile("temp1.txt");
+    temperatureSensor = readFromFile("../sys/bus/w1/devices/");
     print(temperatureSensor);
 
     #for i in range(10):

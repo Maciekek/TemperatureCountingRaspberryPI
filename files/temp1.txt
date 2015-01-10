@@ -1,2 +1,11 @@
 4c 02 4b 46 7g ff 04 10 b2 : crc=b2 YES
 4c 02 4b 46 7g ff 04 10 b2 t=2350
+2015:01:10 20-50-52 Czas:  0:00:18.699939 cykl: grzanie
+2015:01:10 20-51-18 Czas:  0:00:23.169986 cykl: chlodzenie
+2015:01:10 20-51-51 Czas:  0:00:32.110030 cykl: grzanie
+2015:01:10 20-52-13 Czas:  0:00:18.730157 cykl: chlodzenie
+2015:01:10 20-52-32 Czas:  0:00:18.700025 cykl: grzanie
+2015:01:10 20-52-54 Czas:  0:00:18.700081 cykl: chlodzenie
+2015:01:10 20-53-27 Czas:  0:00:32.110073 cykl: grzanie
+2015:01:10 20-53-48 Czas:  0:00:18.699974 cykl: chlodzenie
+2015:01:10 20-53-55 Czas:  0:00:06.110026 cykl: grzanie
