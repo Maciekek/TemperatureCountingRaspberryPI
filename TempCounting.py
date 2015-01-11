@@ -22,7 +22,6 @@ def getActualTemperature():
 
 
 def countProcessType(cycle, lastTemp):
-    lastTemp = getActualTemperature();
     print(lastTemp)
     print(getActualTemperature());
     print(cycle[1]);
@@ -65,7 +64,7 @@ def watchTemperature():
             cycle.append("chlodzenie")
             while lastTemp >= getActualTemperature():
                 lastTemp = countProcessType(cycle, lastTemp)
-
+                time.sleep(60);
             informationCycle(cycle)
             cycle = []
 
@@ -74,7 +73,7 @@ def watchTemperature():
             cycle.append("grzanie")
             while lastTemp <= getActualTemperature():
                 lastTemp = countProcessType(cycle, lastTemp)
-
+                time.sleep(60);
             informationCycle(cycle)
 
         time.sleep(2)
